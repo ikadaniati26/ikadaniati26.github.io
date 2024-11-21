@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Link ke Font Awesome CDN untuk ikon sosial media -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Burger menu icon -->
+    <div class="burger-menu" onclick="openSidebar()">&#9776; MENU</div>
+
+    <!-- Sidebar -->
+    <div id="sidebar" class="sidebar">
+      <a href="javascript:void(0)" class="close-btn" onclick="closeSidebar()">&times;</a>
+      <a href="index.html">Home</a>
+      <a href="about.html">Tentang Saya</a>
+      <a href="skill.html">Skills</a>
+      <a href="project.html">Project</a>
+      <a href="pengalaman.html">Pengalaman</a>
+    </div>
+    <div class="navbar-left">
+      <a href="index.html" class="nav-item">HOME</a>
+    </div>
+    <!-- About Section -->
+    <section id="" class="pengalaman">
+      <div class="container">
+        <div class="row align-items-center">
+          <section>
+            <h2 class="mt-5">Pengalaman Kerja</h2>
+            <ul>
+                <li>
+                    <strong>Tutor Robotik</strong> - Ruang Robot (2021 - Sekarang)
+                    <p>Bertanggung jawab untuk mengajarkan pembuatan robotik kepada siswa sd dan smp</p>
+                </li>
+            </ul>
+        </section>
+
+      <section>
+          <h2>Pengalaman Lain</h2>
+          <ul>
+              <li>
+                  <strong>Peserta</strong> - MSIB Akademi fullstack web developer (2022)
+                  <p>Pernah mengikuti MSIB fullstack Web developer dengan mempelajari html,css, boostrap,ui/ux, github, hingga projek akhir menggunakan laravel</p>
+                  <a href="../profile/dokumen/Sertif msib.pdf" target="blank">Lihat Sertifikat</a>
+              </li>
+          </ul>
+      </section>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JavaScript untuk buka tutup sidebar -->
+    <script>
+      function openSidebar() {
+        document.getElementById("sidebar").style.width = "250px";
+      }
+
+      function closeSidebar() {
+        document.getElementById("sidebar").style.width = "0";
+      }
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script> -->
+  </body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet" />
+  </head>
+  <body class="bg">
+    <!-- Burger menu icon -->
+    <div class="burger-menu" onclick="openSidebar()">&#9776; MENU</div>
+
+    <!-- Sidebar -->
+    <div id="sidebar" class="sidebar">
+      <a href="javascript:void(0)" class="close-btn" onclick="closeSidebar()">&times;</a>
+      <a href="index.html">Home</a>
+      <a href="about.html">Tentang Saya</a>
+      <a href="skill.html">Skills</a>
+      <a href="project.html">Project</a>
+      <a href="pengalaman.html">Pengalaman</a>
+    </div>
+    <!-- <div id="sidebar-container"></div> -->
+    <!-- Home -->
+    <section id="home" class="section">
+      <div class="center-content">
+        <div class="line"></div>
+        <h1 class="display-1 display-sm-2 display-md-3 display-lg-4 text-center">IKA DANIATI.</h1>
+        <div class="line"></div>
+        <p class="subheading">BIOGRAFI | PROGRAMMER SIDE | BLOG</p>
+        <div class="learn-more-container">
+          <a href="javascript:void(0)" class="learn-more" onclick="scrollToSection()">Learn More</a>
+          <div class="down-arrow">&darr;</div>
+        </div>
+      </div>
+    </section>
+    <!-- about -->
+    <section id="about" class="section">
+      <div class="profile-container">
+        <br /><br />
+        <p class="subheading">IKA MARIA DANIATI</p>
+        <div class="line" width="500px"></div>
+        <br />
+        <img src="../profile/image/aku.jpeg" alt="Profile Picture" class="profile-image" />
+        <p class="subheading">Fresh Graduate</p>
+        <p class="subheading">2020-2024 | Universitas Nusantara PGRI Kediri | S1 Teknik Informatika.</p>
+        <p><a href="../profile/dokumen/CV Ika Maria Daniati.pdf" target="_blank" class="subheading">CV</a></p>
+      </div>
+    </section>
+
+    <section id="footer" class="section">
+      <div class="center-content"></div>
+      <footer class="footer">
+        <div class="footer-content">
+          <p>&copy; 2024 Ika Maria Daniati S.Kom. All Rights Reserved.</p>
+        </div>
+      </footer>
+    </section>
+
+    <!-- JavaScript untuk buka tutup sidebar -->
+    <script>
+      function openSidebar() {
+        document.getElementById("sidebar").style.width = "250px";
+      }
+
+      function closeSidebar() {
+        document.getElementById("sidebar").style.width = "0";
+      }
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScript untuk menscroll halus -->
+    <script>
+      function scrollToSection() {
+        document.getElementById("about").scrollIntoView({ behavior: "smooth" });
+      }
+    </script>
+ 
+  </body>
+</html>

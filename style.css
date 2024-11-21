@@ -1,0 +1,324 @@
+/* styles.css */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cardo&display=swap");
+.bg {
+  height: 100%;
+  margin: 0;
+  background: url("../profile/image/p5.jpg") no-repeat center center fixed;
+  background-size: cover;
+  background-color: rgb(8, 8, 8);
+  overflow-x: hidden;
+  font-family: "Roboto", sans-serif;
+}
+
+/* ============================HEADING CSS============================= */
+h1 {
+  font-family: "Cardo", serif;
+  font-size: 6vw;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: white;
+  margin: 0;
+}
+
+.center-content {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.line {
+  border-top: 1px solid rgba(255, 255, 255, 0.6);
+  width: 300px;
+  margin: 10px auto;
+}
+
+.learn-more-container {
+  text-align: center;
+  display: inline-block;
+}
+
+.learn-more {
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 5px; /* Jarak antara teks dan panah */
+  transition: color 0.3s ease-in-out;
+}
+
+.learn-more:hover {
+  color: #dda0dd; /* Warna hover teks, lebih lembut */
+}
+
+.down-arrow {
+  font-size: 1.5em;
+  color: white;
+  transition: transform 0.3s ease-in-out;
+}
+
+.learn-more-container:hover .down-arrow {
+  transform: translateY(5px); /* Animasi turun panah saat di-hover */
+}
+/* ==================ENDHEADING CSS=========================== */
+
+/* ==================SUBHEADING CSS========================== */
+.subheading {
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  letter-spacing: 3px; /* Adjust spacing as needed */
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 5px;
+  text-transform: uppercase;
+}
+/*================= END SUBHEADING CSS====================== */
+
+/*===================== SIDEBAR CSS =========================*/
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: black;
+  overflow-x: hidden;
+  transition: 0.3s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 10px 15px;
+  margin-left: 10px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.sidebar a:hover {
+  color: white;
+  transform: translateX(10px);
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  font-size: 36px;
+}
+
+.burger-menu {
+  position: fixed;
+  top: 15px;
+  right: 30px;
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+}
+/*============== END SIDEBAR CSS ===========================*/
+
+/* ABOUT CSS */
+.profile-image {
+  width: 250px;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+#about {
+  /* background-color: #004f66; */
+  background-color: #0f6781;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+  align-items: center;
+  text-align: center;
+}
+/*=================== ENDABOUT CSS========================== */
+
+/*==================== FOOTER CSS=========================== */
+.footer {
+  background-color: #0f6781;
+  color: #ffffff; /* Warna teks */
+  padding: 20px;
+  text-align: center;
+}
+/*====================== FOOTER CSS =========================*/
+
+/*==================== SKILL CSS ============================*/
+/* Skill Circle */
+.skill-circle {
+  width: 130px;
+  height: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #007bff;
+  border-radius: 50%;
+  color: white;
+  font-size: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: auto;
+}
+
+.skill-circle:hover {
+  transform: translateY(-10px);
+  background-color: #0056b3;
+}
+
+.skills-container {
+  margin-top: 70px;
+}
+
+/*===================== END SKILL CSS ====================== */
+
+/* NAVBAR CSS */
+.navbar-left {
+  box-sizing: border-box;
+  display: flex;
+  height: 55px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #0f6781;
+  color: white;
+}
+.navbar-left .nav-item {
+  font-family: "Arial", sans-serif; /* Pilih font yang sesuai */
+  font-size: 20px; /* Ukuran font */
+  font-weight: bold; /* Membuat font lebih tebal */
+  color: white; /* Warna biru untuk teks */
+  text-transform: uppercase; /* Mengubah teks menjadi kapital */
+  letter-spacing: 1px; /* Menambahkan jarak antar huruf */
+  text-decoration: none; /* Menghapus underline */
+  position: relative;
+  transition: color 0.3s, transform 0.3s; /* Animasi perubahan warna dan transformasi */
+}
+
+.navbar-left .nav-item:hover {
+  color: black; /* Warna saat hover */
+  transform: scale(1.1); /* Memperbesar font saat hover */
+}
+
+.navbar-left .nav-item:before {
+  content: ""; /* Membuat garis bawah */
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar-left .nav-item:hover:before {
+  transform: scaleX(1); /* Menampilkan garis bawah saat hover */
+}
+
+/*=====================  TENTANG CSS =========================== */
+.tentang {
+  position: center;
+  padding-top: 5%;
+}
+.img-fluid {
+  object-fit: cover; /* Menjaga gambar tetap mengisi area tanpa distorsi */
+}
+
+.social-media {
+  display: flex;
+  /* justify-content: center; */
+  gap: 20px;
+}
+.social-media a {
+  font-size: 30px;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.social-media a:hover {
+  color: #0073e6;
+}
+
+/*======================== PROJEK CSS =========================== */
+.project-section {
+  text-align: center;
+  padding: 40px;
+}
+.project-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+.project-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.phone-frame {
+  max-width: 250px; /* Atur sesuai kebutuhan */
+  height: auto; /* Agar proporsi tetap */
+}
+
+.app-image {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: #333;
+}
+/*======================== PROJEK CSS =========================== */
+/*======================== PENGALAMAN CSS =========================== */
+
+.pengalaman h2 {
+  font-size: 1.7rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: black;
+  margin-bottom: 15px;
+  border-bottom: 2px solid black;
+  padding-bottom: 5px;
+}
+
+.pengalaman ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.pengalaman li {
+  margin-bottom: 15px;
+  padding: 10px;
+  border-left: 4px solid #0f6781;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Text styles inside list items */
+.pengalaman li strong {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.pengalaman li p {
+  margin: 5px 0 0 0;
+  color: #666;
+  font-size: 0.95rem;
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+    align-items: center;
+  }
+  section {
+    max-width: 100%;
+  }
+}
